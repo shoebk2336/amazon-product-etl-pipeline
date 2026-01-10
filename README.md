@@ -28,7 +28,7 @@ Automated ETL pipeline built with **AWS Glue Studio** to process and analyze Ama
 
 ## 🏗️ Architecture
 
-![Pipeline Architecture](architecture/pipeline-diagram.png)
+![Pipeline Architecture](architecture/architecture-pipeline.png)
 
 ### Tech Stack
 - **Extract:** AWS Glue Crawler, Amazon S3
