@@ -64,7 +64,7 @@ Automated ETL pipeline built with **AWS Glue Studio** to process and analyze Ama
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
 │                   ANALYTICS LAYER                                │
-│  [Amazon Athena] → [Amazon QuickSight Dashboards]               │
+│               [Amazon Athena] → [S3 Output]               │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -143,14 +143,12 @@ discount_price * no_of_ratings
 - **Total Records Processed:** 10,000+
 - **Categories Analyzed:** 15+
 - **Sub-Categories:** 100+
-- **Data Quality Issues Identified:** X% (pricing errors, missing values)
 
 ### Business Insights
-✅ **Electronics and Home categories** have the highest average ratings (4.3+)  
-✅ **Premium products** (>₹5,000) receive 20% higher ratings than budget items  
-✅ **Average discount** across all categories: 18%  
+✅ **Appliances and Car & Motorbike** have the highest average ratings (3.6+)  
+✅ **Premium products** (>₹5,000) receive 9% higher ratings than budget items  
+✅ **Average discount** across all categories: 47%  
 ✅ **Top-performing sub-categories** identified for merchandising focus  
-✅ **Data quality improvements** recommended for X% of records
 
 ---
 
@@ -191,9 +189,6 @@ WHERE actual_price > 0 AND actual_price >= discount_price;
 ![Glue Studio Pipeline](screenshots/glue-studio-pipeline.png)
 *Complete ETL pipeline with visual transformations*
 
-![QuickSight Dashboard](screenshots/quicksight-dashboard.png)
-*Category performance analytics dashboard*
-
 ---
 
 ## 🚀 Project Highlights
@@ -212,7 +207,7 @@ WHERE actual_price > 0 AND actual_price >= discount_price;
 **Technical Skills:**
 - ETL Pipeline Design & Implementation
 - SQL (Data Cleaning, Aggregation, Window Functions)
-- AWS Cloud Services (Glue, S3, Athena, QuickSight)
+- AWS Cloud Services (Glue, S3, Athena)
 - Data Quality & Validation
 - Analytics & Business Intelligence
 - Cloud-Native Architecture
